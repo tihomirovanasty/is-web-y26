@@ -9,29 +9,25 @@ export const Home = ({ id, fetchedUser }) => {
   const routeNavigator = useRouteNavigator();
 
   function openStoriesBox (){
-    fetch('https://randcatimg.yabloko.dev/6831a364c070cb18')
-      .then(response => response.text())
-      .then(result => {
-        console.log(result)
-        bridge.send('VKWebAppShowStoryBox', {
-          background_type: 'image',
-          blob : result,
-          attachment: {
-            text: 'book',
-            type: 'photo',
-            owner_id: 743784474,
-            id: 12345678
+
+      bridge.send('VKWebAppShowStoryBox', {
+        background_type: 'image',
+        url : 'https://loremflickr.com/720/1280?random=3',
+        attachment: {
+          text: 'book',
+          type: 'photo',
+          owner_id: 743784474,
+          id: 12345678
+        }})
+        .then((data) => {
+          if (data.code_data) {
+            // Редактор историй открыт
+            console.log(data);
           }})
-          .then((data) => {
-            if (data.code_data) {
-              // Редактор историй открыт
-              console.log(data);
-            }})
-          .catch((error) => {
-            // Ошибка
-            console.log(error);
-          });
-      })
+        .catch((error) => {
+          // Ошибка
+          console.log(error);
+        });
 
     // fetch('https://api.api-ninjas.com/v1/randomimage?category=abstract', {
     //   headers: {
