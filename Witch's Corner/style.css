@@ -1,85 +1,342 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./Font/Roboto-Regular.ttf);
+}
 header {
     display: flex;
     flex-direction: row;
+    margin: 6vh 1vw 0 1vw;
 }
 
 body {
- margin: 0;
- overflow-x: hidden;
+    margin: 0;
+    overflow-x: hidden;
+    background: #F6E8F5;
+    font-family: 'Roboto';
 }
 
 .logo {
     display: block;
-    background: #5E5656;
-    width: 5vw;
-    height: 5vw;
     text-align: center;
+    width: 13vw;
+    height: 16vh;
+}
+ 
+.logo > img {
+    display: block;
+    width: 100%;
 }
 .moon_info {
     display: flex;
     flex-direction: column;
     width: auto;
     margin-left: auto;
-    margin-bottom: 10px;
+    margin-top: 3vh;
 }
 
 .moon_info > article {
-    background-color: #5E5656;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+    color: #651D60;
+}
+
+.moon_info > article + article {
+    font-weight: 500;
 }
 
 nav {
-    display: block;
-    background: #5E5656;
-    width: 34vw;
-    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    width: auto;
     text-align: center;
     margin-left: auto;
     margin-top: 10px;
 }
+
+nav > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #651D60;
+    width: 2vw;
+    height: 2vw;
+    margin: 0 2vw;
+}
+
+nav > a:last-child {
+    margin-right: 0;
+}
+
+nav > a > img {
+    display: block;
+    width: 100%;
+}
+
 main {
     display: flex;
     flex-direction: column;
 }
 .slogan {
-    display: block;
-    background: #9a9393;
-    width: 43vw;
-    height: 3vh;
+    width: auto;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #651D60;
     text-align: center;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 7vh;
 }
 .popular {
-    display: block;
-    background: #9a9393;
-    width: 94vw;
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
     text-align: center;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 7vh;
 }
+
+.popular > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.popular > div > a {
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    margin-top: 11vh;
+}
+
+.popular > div > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.popular > div > div > a {
+    width: 10vw;
+    height: 22vh;
+    background: #FFFFFF;
+    margin: 5vh 4vw;
+}
+
+.popular > p {
+    width: auto;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #651D60;
+}
+
 .rewiews {
-    display: block;
-    background: #9a9393;
-    width: 80vw;
-    height: 57vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
     text-align: center;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 7vh;
 }
+
+.rewiews > p {
+    width: auto;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #651D60;
+}
+
+.rewiews > .all_rewiews {
+    display: flex;
+    flex-direction: row;
+}
+
+.rewiews > .all_rewiews > a{
+    box-sizing: border-box;
+
+    width: 18vw;
+    height: 35vh;
+
+    background: #F6E8F5;
+    border: 1px solid #651D60;
+
+    margin: 5vh 7vw 7vh 7vw;
+}
+
+.rewiews > .buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.rewiews > .buttons > a {
+
+    width: 15vw;
+    height: 7vh;
+
+    background: #F6E8F5;
+    border: 1px solid #651D60;
+
+    font-weight: 550;
+    font-size: 18px;
+    text-align:center;
+    color: #651D60;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 2vh 2vw 0 2vw;
+}
+
+.rewiews > .buttons > a:last-child{
+
+    background: #651D60;
+    color: #F6E8F5;
+
+}
+
 .magic_block {
-    display: block;
-    background: #9a9393;
-    width: 81vw;
-    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
     text-align: center;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 7vh;
 }
+
+.magic_block > p {
+    width: auto;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #651D60;
+}
+
+.magic_block > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.magic_block > div > a {
+    width: 32vw;
+    height: 56vh;
+    background: #F6E8F5;
+    border: 1px solid #651D60;
+
+    font-weight: 700;
+    font-size: 24px;
+    color: #651D60;
+
+    padding-top: 3vh;
+    margin: 5vh 9vw;
+}
+
+.magic_block > a {
+    width: 15vw;
+    height: 7vh;
+    background: #651D60;
+    margin-top: 7vh;
+
+    font-weight: 550;
+    font-size: 18px;
+    text-align: center;
+    color: #F6E8F5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .info_footer {
-    display: block;
-    background: #c1bebe;
+    display: flex;
+    flex-direction: row;
     width: 100vw;
     height: 38vh;
+    background: #651D60;
     text-align: center;
+    margin-top: 7vh;
+    justify-content: space-around;
+}
+
+.info_footer > div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-top: 3vh;
+}
+
+.info_footer > div > p {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+
+    color: #F6E8F5;
+}
+
+.info_footer > div > .products {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    height: 20vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.info_footer > div > .products > a {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
+}
+
+.info_footer > div > .companies {
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    height: 26vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.info_footer > div > .companies > a {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
+}
+
+.info_footer > div > .buyer {
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    height: 26vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.info_footer > div > .buyer > a {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
+}
+
+.info_footer > div > .contacts {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    height: 26vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.info_footer > div > .contacts > p {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
 }
