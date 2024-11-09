@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+ margin: 0;
+ overflow-x: hidden;
+}
+
+.logo {
+    display: block;
+    background: #5E5656;
+    width: 5vw;
+    height: 5vw;
+    text-align: center;
+}
+.moon_info {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.moon_info > article {
+    background-color: #5E5656;
+}
+
+nav {
+    display: block;
+    background: #5E5656;
+    width: 34vw;
+    height: 7vh;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 10px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.slogan {
+    display: block;
+    background: #9a9393;
+    width: 43vw;
+    height: 3vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.popular {
+    display: block;
+    background: #9a9393;
+    width: 94vw;
+    height: 30vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.rewiews {
+    display: block;
+    background: #9a9393;
+    width: 80vw;
+    height: 57vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.magic_block {
+    display: block;
+    background: #9a9393;
+    width: 81vw;
+    height: 81vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.info_footer {
+    display: block;
+    background: #c1bebe;
+    width: 100vw;
+    height: 38vh;
+    text-align: center;
+}
