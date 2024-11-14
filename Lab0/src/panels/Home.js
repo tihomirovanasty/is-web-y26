@@ -12,7 +12,7 @@ export const Home = ({ id, fetchedUser }) => {
 
       bridge.send('VKWebAppShowStoryBox', {
         background_type: 'image',
-        url : 'https://loremflickr.com/720/1280?random=3',
+        url : https://loremflickr.com/720/1280?random=${Math.random() * 100},
         attachment: {
           text: 'book',
           type: 'photo',
