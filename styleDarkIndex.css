@@ -11,7 +11,7 @@ header {
 body {
     margin: 0;
     overflow-x: hidden;
-    background: #F6E8F5;
+    background: #651D60;
     font-family: 'Roboto';
 }
 
@@ -40,7 +40,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     text-align: right;
-    color: #651D60;
+    color: #F6E8F5;
 }
 
 .moon_info > article + article {
@@ -59,7 +59,6 @@ nav > a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    transition: .5s all;
 }
 
 nav > a:hover{
@@ -69,7 +68,7 @@ nav > a:hover{
 nav > a > p {
     font-weight: 400;
     font-size: 18px;
-    color: #651D60;
+    color: #F6E8F5;
 }
 
 nav > a:hover > p {
@@ -99,7 +98,7 @@ main {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    color: #651D60;
+    color: #F6E8F5;
     text-align: center;
     margin: auto;
     margin-top: 7vh;
@@ -149,7 +148,7 @@ main {
     font-weight: 700;
     font-size: 30px;
     text-align: center;
-    color: #651D60;
+    color: #F6E8F5;
 }
 
 .rewiews {
@@ -167,7 +166,7 @@ main {
     font-weight: 700;
     font-size: 30px;
     text-align: center;
-    color: #651D60;
+    color: #F6E8F5;
 }
 
 .rewiews > .all_rewiews {
@@ -181,8 +180,8 @@ main {
     width: 18vw;
     height: 35vh;
 
-    background: #F6E8F5;
-    border: 1px solid #651D60;
+    background: #651D60;
+    border: 1px solid #F6E8F5;
 
     margin: 5vh 7vw 7vh 7vw;
 }
@@ -197,13 +196,13 @@ main {
     width: 15vw;
     height: 7vh;
 
-    background: #F6E8F5;
-    border: 1px solid #651D60;
+    background: #651D60;
+    border: 1px solid #F6E8F5;
 
     font-weight: 550;
     font-size: 18px;
     text-align:center;
-    color: #651D60;
+    color: #F6E8F5;
 
     display: flex;
     flex-direction: column;
@@ -214,8 +213,8 @@ main {
 
 .buttons > a:last-child{
 
-    background: #651D60;
-    color: #F6E8F5;
+    background: #F6E8F5;
+    color: #651D60;
 
 }
 
@@ -233,7 +232,7 @@ main {
     font-weight: 700;
     font-size: 30px;
     text-align: center;
-    color: #651D60;
+    color: #F6E8F5;
 }
 
 .magic_block > div {
@@ -244,12 +243,12 @@ main {
 .magic_block > div > a {
     width: 32vw;
     height: 56vh;
-    background: #F6E8F5;
-    border: 1px solid #651D60;
+    background: #651D60;
+    border: 1px solid #F6E8F5;
 
     font-weight: 700;
     font-size: 24px;
-    color: #651D60;
+    color: #F6E8F5;
 
     padding-top: 3vh;
     margin: 5vh 9vw;
@@ -258,13 +257,13 @@ main {
 .magic_block > a {
     width: 15vw;
     height: 7vh;
-    background: #651D60;
+    background: #F6E8F5;
     margin-top: 7vh;
 
     font-weight: 550;
     font-size: 18px;
     text-align: center;
-    color: #F6E8F5;
+    color: #651D60;
 
     display: flex;
     flex-direction: column;
@@ -276,7 +275,7 @@ main {
     flex-direction: row;
     width: 100vw;
     height: 38vh;
-    background: #651D60;
+    background: #F6E8F5;
     text-align: center;
     margin-top: 7vh;
     justify-content: space-around;
@@ -294,7 +293,7 @@ main {
     font-size: 18px;
     text-align: left;
 
-    color: #F6E8F5;
+    color: #651D60;
 }
 
 .products {
@@ -310,7 +309,7 @@ main {
     font-weight: 400;
     font-size: 16px;
 
-    color: #F6E8F5;
+    color: #651D60;
 }
 
 .companies {
@@ -326,7 +325,7 @@ main {
     font-weight: 400;
     font-size: 16px;
 
-    color: #F6E8F5;
+    color: #651D60;
 }
 
 .buyer {
@@ -342,7 +341,7 @@ main {
     font-weight: 400;
     font-size: 16px;
 
-    color: #F6E8F5;
+    color: #651D60;
 }
 
 .contacts {
@@ -357,7 +356,7 @@ main {
     font-weight: 400;
     font-size: 16px;
 
-    color: #F6E8F5;
+    color: #651D60;
 }
 
 @media (max-width: 1200px) {
