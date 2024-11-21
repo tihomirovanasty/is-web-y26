@@ -1,0 +1,332 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./../Font/Roboto-Regular.ttf);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 6vh 1vw 0 1vw;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: #F6E8F5;
+    font-family: 'Roboto';
+}
+
+.active-link{
+    border: 1px solid #651D60;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    width: 13vw;
+    height: 16vh;
+    min-width: 170px;
+    min-height: 120px;
+}
+ 
+.logo > img {
+    display: block;
+    width: 100%;
+}
+.moon_info {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+    margin-top: 3vh;
+}
+
+.moon_info > article {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+    color: #651D60;
+}
+.moon_info > article + article {
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    transform: scale(1.2);
+}
+
+nav > a > p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #651D60;
+}
+
+nav > a:hover > p {
+    text-decoration: underline;
+}
+
+nav > a > img {
+    display: block;
+    width: 100%;
+    width: 2vw;
+    min-width: 20px;
+    min-height: 20px;
+    height: 2vw;
+    margin: 0 2vw;
+}
+
+nav > a > img:last-child {
+    margin-right: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.slogan {
+    width: auto;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #651D60;
+    text-align: center;
+    margin: auto;
+    margin-top: 7vh;
+}
+
+.header__centered{
+    width: fit-content;
+    margin: 0 auto;
+    color: #651D60;
+    margin-bottom: 90px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 7vh;
+}
+
+.table-wrapper{
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    grid-template-columns: 20% 40% 20% 20%;
+    row-gap: 55px;
+}
+
+.table-wrapper > .row{
+    display: grid;
+    grid-column: 1 / 5;
+    grid-template-columns: 20% 40% 20% 20%;
+    padding: 40px;
+    border: 1px solid #651D60;
+    border-radius: 30px;
+}
+
+.table-wrapper > .row > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #651D60;
+}
+
+.table-wrapper > .header__row {
+    background-color: #F6E8F5 !important;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.table-wrapper > .header__row > div{
+    color: #651D60 !important;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.table-wrapper > .row:nth-child(odd){
+    background-color: #651D60;
+}
+
+.table-wrapper > .row:nth-child(odd) > div{
+    color: #fff;
+}
+
+.info_footer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 38vh;
+    background: #651D60;
+    text-align: center;
+    margin-top: 15vh;
+    justify-content: space-around;
+}
+
+.info_footer > div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-top: 3vh;
+}
+
+.info_footer > div > p {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+
+    color: #F6E8F5;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    height: 20vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.products > a {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
+}
+
+.companies {
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    height: 26vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.companies > a {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
+}
+
+.buyer {
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    height: 26vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.buyer > a {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
+}
+
+.contacts {
+    flex-direction: column;
+    width: 18vw;
+    height: 26vh;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.contacts > p {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #F6E8F5;
+}
+
+@media (max-width: 1200px) {
+    nav > a  > p {
+        display: none;
+    }
+    
+    .products > a {
+        display: none;
+    }
+
+    .companies > a {
+        display: none;
+    }
+
+    .buyer > a {
+        display: none;
+    }
+
+    .info_footer {
+        height: 20vh;
+    }
+
+    .contacts > p {
+        display: none;
+    }
+
+    .info_footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .info_footer > div:nth-child(1){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .info_footer > div:nth-child(2){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .info_footer > div:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .info_footer > div:nth-child(4){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav > a  > p {
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .moon_info > article {
+        display: none;
+    }
+    
+    .moon_info {
+        margin-top: 9vh;
+    }
+}
