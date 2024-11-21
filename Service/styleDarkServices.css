@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(./Font/Roboto-Regular.ttf);
+    src: url(./../Font/Roboto-Regular.ttf);
 }
 header {
     display: flex;
@@ -92,8 +92,21 @@ nav > a > img:last-child {
     margin-right: 0;
 }
 
-main{
+main {
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
+}
+
+.slogan {
+    width: auto;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #F6E8F5;
+    text-align: center;
+    margin: auto;
+    margin-top: 7vh;
 }
 
 .header__centered{
@@ -103,6 +116,7 @@ main{
     margin-bottom: 90px;
     font-weight: 700;
     font-size: 30px;
+    margin-top: 7vh;
 }
 
 .table-wrapper{

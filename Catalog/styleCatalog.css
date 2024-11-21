@@ -97,6 +97,7 @@ main {
     flex-direction: column;
     margin-top: 40px;
 }
+
 .slogan {
     width: auto;
     font-weight: 400;
@@ -108,65 +109,6 @@ main {
     margin-top: 7vh;
 }
 
-.header__centered{
-    width: fit-content;
-    margin: 0 auto;
-    color: #651D60;
-    margin-bottom: 90px;
-    font-weight: 700;
-    font-size: 30px;
-    margin-top: 7vh;
-}
-
-.table-wrapper{
-    display: grid;
-    width: 95%;
-    margin: 0 auto;
-    grid-template-columns: 20% 40% 20% 20%;
-    row-gap: 55px;
-}
-
-.table-wrapper > .row{
-    display: grid;
-    grid-column: 1 / 5;
-    grid-template-columns: 20% 40% 20% 20%;
-    padding: 40px;
-    border: 1px solid #651D60;
-    border-radius: 30px;
-}
-
-.table-wrapper > .row > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 18px;
-    color: #651D60;
-}
-
-.table-wrapper > .header__row {
-    background-color: #F6E8F5 !important;
-    border: none;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.table-wrapper > .header__row > div{
-    color: #651D60 !important;
-    font-size: 25px;
-    font-weight: 550;
-}
-
-.table-wrapper > .row:nth-child(odd){
-    background-color: #651D60;
-}
-
-.table-wrapper > .row:nth-child(odd) > div{
-    color: #fff;
-}
-
 .info_footer {
     display: flex;
     flex-direction: row;
@@ -174,7 +116,7 @@ main {
     height: 38vh;
     background: #651D60;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 19vh;
     justify-content: space-around;
 }
 
