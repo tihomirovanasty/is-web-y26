@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(./Font/Roboto-Regular.ttf);
+    src: url(./../Font/Roboto-Regular.ttf);
 }
 header {
     display: flex;
@@ -13,6 +13,9 @@ body {
     overflow-x: hidden;
     background: #651D60;
     font-family: 'Roboto';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -75,7 +78,7 @@ nav > a:hover > p {
     text-decoration: underline;
 }
 
-nav > a > img {
+nav > a > svg, nav > a > img {
     display: block;
     width: 100%;
     width: 2vw;
@@ -83,9 +86,10 @@ nav > a > img {
     min-height: 20px;
     height: 2vw;
     margin: 0 2vw;
+    fill: #F6E8F5;
 }
 
-nav > a > img:last-child {
+nav > a > svg:last-child {
     margin-right: 0;
 }
 
@@ -137,8 +141,8 @@ main {
     margin: 5vh 4vw;
 }
 
-.move-btn > img{
-    display: block;
+.move-btn > svg{
+    fill: #F6E8F5;
     width: 100%;
     height: 100%;
 }
@@ -270,6 +274,10 @@ main {
     justify-content: center;
 }
 
+footer{
+    margin-top: auto;
+}
+
 .info_footer {
     display: flex;
     flex-direction: row;
@@ -356,6 +364,66 @@ main {
     font-weight: 400;
     font-size: 16px;
 
+    color: #651D60;
+}
+
+
+.header__centered{
+    width: fit-content;
+    margin: 0 auto;
+    color: #F6E8F5;
+    margin-bottom: 90px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 7vh;
+}
+
+.table-wrapper{
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    grid-template-columns: 20% 40% 20% 20%;
+    row-gap: 55px;
+}
+
+.table-wrapper > .row{
+    display: grid;
+    grid-column: 1 / 5;
+    grid-template-columns: 20% 40% 20% 20%;
+    padding: 40px;
+    border: 1px solid #F6E8F5;
+    border-radius: 30px;
+}
+
+.table-wrapper > .row > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #F6E8F5;
+}
+
+.table-wrapper > .header__row {
+    background-color: #651D60 !important;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.table-wrapper > .header__row > div{
+    color: #F6E8F5 !important;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.table-wrapper > .row:nth-child(odd){
+    background-color: #F6E8F5;
+}
+
+.table-wrapper > .row:nth-child(odd) > div{
     color: #651D60;
 }
 
